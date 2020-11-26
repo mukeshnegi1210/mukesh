@@ -1,12 +1,17 @@
 /* ===================repsonsive media queries ================= */
 
 @media(max-width:1199px) {
+    .primary-menu ul li {
+        text-align: center;
+        line-height: 1.2;
+
+    }
     .primary-menu ul li a {
         font-size: 12px;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1023px) {
     .header-bottom .btn-holder {
         background: #000000;
         padding: 10px 15px;
@@ -15,7 +20,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         z-index: 9999;
         padding: 50px 30px;
@@ -30,6 +35,7 @@
     }
     .primary-menu ul li {
         padding: 10px 0;
+        line-height: 24px;
     }
     .btn-mobile-open,
     .btn-mobile-close {
@@ -135,7 +141,7 @@
         margin-left: 0;
         margin-top: 20px;
     }
-    .filter-top  {
+    .filter-top {
         margin-bottom: 20px;
     }
     .filter-top .filter-toggle {
@@ -150,7 +156,6 @@
         display: none;
         padding-bottom: 20px;
     }
-    
     .shop-by-brand-inner {
         flex-direction: column;
     }
@@ -186,7 +191,7 @@
         font-size: 40px;
         line-height: 45px;
     }
-    .header-center .header-center-inner{
+    .header-center .header-center-inner {
         padding: 10px 0;
     }
     .header-top .header-top-inner {
@@ -218,7 +223,6 @@
         width: 100%;
         padding: 0 15px;
     }
- 
 }
 
 @media(max-width:479px) {
@@ -226,16 +230,16 @@
         font-size: 35px;
         line-height: 40px;
     }
-    footer h3{
+    footer h3 {
         font-size: 20px;
     }
-    h4{
+    h4 {
         font-size: 16px;
     }
     .header-center .header-center-inner {
         position: relative;
     }
-    .header-center-right .header-search{
+    .header-center-right .header-search {
         position: absolute;
         top: 0;
         left: 100%;
@@ -251,17 +255,16 @@
         -o-transition: all .3s ease-in-out;
         transition: all .3s ease-in-out;
     }
-    .header-center-right .header-search.active{
+    .header-center-right .header-search.active {
         left: 0;
     }
-
-    .banner-left .banner-img{
+    .banner-left .banner-img {
         min-height: 300px;
     }
-    .banner-features .banner-feature .feature-img{
-        flex:  0 0 35px;
+    .banner-features .banner-feature .feature-img {
+        flex: 0 0 35px;
     }
-    .filter-top h3{
+    .filter-top h3 {
         font-size: 18px;
     }
     .shipping-message h2 {
@@ -277,8 +280,8 @@
         margin-right: 10px;
         color: #cf0000;
         cursor: pointer;
-    }  
-       .btn-search-close {
+    }
+    .btn-search-close {
         display: inline-block;
         font-size: 25px;
         margin-left: 10px;

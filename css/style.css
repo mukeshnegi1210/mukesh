@@ -280,7 +280,6 @@ header.fixed-header {
 .btn-mobile-close {
     display: none;
     font-size: 25px;
-    color: #003a78;
     cursor: pointer;
 }
 
@@ -288,6 +287,7 @@ header.fixed-header {
     position: absolute;
     right: 20px;
     top: 20px;
+    z-index: 99;
 }
 
 .primary-menu {
