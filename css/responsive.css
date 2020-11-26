@@ -1,0 +1,288 @@
+/* ===================repsonsive media queries ================= */
+
+@media(max-width:1199px) {
+    .primary-menu ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:1024px) {
+    .header-bottom .btn-holder {
+        background: #000000;
+        padding: 10px 15px;
+    }
+    nav.primary-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        padding: 50px 30px;
+        left: 100%;
+        transition: all 300ms ease-in;
+    }
+    .mobile-open .primary-menu {
+        left: 0;
+    }
+    nav.primary-menu ul {
+        flex-direction: column;
+    }
+    .primary-menu ul li {
+        padding: 10px 0;
+    }
+    .btn-mobile-open,
+    .btn-mobile-close {
+        display: inline-block;
+    }
+    .primary-menu ul li+li {
+        border-left: 0;
+        border-top: 1px solid #ffffff;
+    }
+    .primary-menu ul li a {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:991px) {
+    h1 {
+        font-size: 70px;
+        line-height: 75px;
+    }
+    .header-search .form-control {
+        min-width: auto;
+    }
+    .banner-inner {
+        flex-direction: column;
+    }
+    .banner-left {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+    .banner-right {
+        flex: 0 0 100%;
+    }
+    .clocks-list .clock:last-child {
+        margin-right: 0;
+    }
+    .clocks-list .clock+.clock {
+        margin-left: 0;
+    }
+    .clocks-list {
+        flex-wrap: wrap;
+    }
+    .clocks-list .clock {
+        margin: 10px 0;
+    }
+    .footer-top-inner {
+        flex-wrap: wrap;
+    }
+    .footer-information {
+        flex: 0 0 30%;
+    }
+    .footer-contact {
+        flex: 0 0 100%;
+        margin-top: 25px;
+    }
+    .footer-contact-info {
+        flex: 0 0 30%;
+    }
+    .shipping-message h2 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:767px) {
+    h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    header .logo {
+        max-width: 200px;
+    }
+    .header-search .form-control {
+        padding: 5px 10px;
+    }
+    .header-center-right .header-search {
+        margin-right: 10px;
+    }
+    .header-cart {
+        font-size: 18px;
+    }
+    .header-cart .cart-icon {
+        max-width: 35px;
+    }
+    .product-by-categories-inner {
+        flex-direction: column;
+    }
+    .product-by-categories-inner .filter {
+        flex: 0 0 100%
+    }
+    .product-by-categories-inner .product-list {
+        flex: 0 0 100%;
+        flex-wrap: wrap;
+    }
+    .product-by-categories-inner .product-list .product {
+        flex: 0 0 100%
+    }
+    .product-by-categories-inner .product-list .product+.product {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .filter-top  {
+        margin-bottom: 20px;
+    }
+    .filter-top .filter-toggle {
+        display: inline-block;
+        cursor: pointer;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        text-align: right;
+    }
+    .filter ul {
+        display: none;
+        padding-bottom: 20px;
+    }
+    
+    .shop-by-brand-inner {
+        flex-direction: column;
+    }
+    .shop-by-brand-inner .filter {
+        flex: 0 0 100%
+    }
+    .shipping-message {
+        padding: 30px 0;
+    }
+    .shipping-message h2 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .footer-information {
+        flex: 0 0 100%;
+    }
+    .footer-contact-info {
+        flex: 0 0 100%;
+        margin-top: 25px;
+        padding: 0;
+    }
+    .payment-options {
+        margin-top: 25px;
+        flex: 0 0 100%;
+    }
+    .copyright {
+        padding: 20px 0;
+    }
+}
+
+@media(max-width:576px) {
+    h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .header-center .header-center-inner{
+        padding: 10px 0;
+    }
+    .header-top .header-top-inner {
+        flex-wrap: wrap;
+        line-height: 1.8;
+        justify-content: center;
+    }
+    .header-center-right {
+        margin-left: 5px;
+    }
+    .headertop-menu li:first-child a {
+        padding-left: 0;
+    }
+    header .logo {
+        max-width: 150px;
+    }
+    .header-cart {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .btn-mobile-open {
+        font-size: 25px;
+    }
+    .banner-text {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        width: 100%;
+        padding: 0 15px;
+    }
+ 
+}
+
+@media(max-width:479px) {
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    footer h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    .header-center .header-center-inner {
+        position: relative;
+    }
+    .header-center-right .header-search{
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+    .header-center-right .header-search.active{
+        left: 0;
+    }
+
+    .banner-left .banner-img{
+        min-height: 300px;
+    }
+    .banner-features .banner-feature .feature-img{
+        flex:  0 0 35px;
+    }
+    .filter-top h3{
+        font-size: 18px;
+    }
+    .shipping-message h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .copyright {
+        padding: 10px 0;
+    }
+    .btn-search-open {
+        display: inline-block;
+        font-size: 25px;
+        margin-right: 10px;
+        color: #cf0000;
+        cursor: pointer;
+    }  
+       .btn-search-close {
+        display: inline-block;
+        font-size: 25px;
+        margin-left: 10px;
+        color: #cf0000;
+        cursor: pointer;
+    }
+}
