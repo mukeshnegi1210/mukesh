@@ -1108,6 +1108,14 @@ header.fixed-header .logo {
   cursor: pointer;
 }
 
+.menu-wrapper .primary-menu ul li.has-sub-menu .plus-minus {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25px;
+  flex: 0 0 25px;
+  max-width: 25px;
+  text-align: center;
+}
+
 .menu-wrapper .primary-menu ul li.has-sub-menu .plus-minus .fa {
   color: #464646;
   font-size: 13px;
@@ -1128,6 +1136,8 @@ header.fixed-header .logo {
   padding: 0 75px;
   visibility: hidden;
   opacity: 0;
+  display: block;
+  padding-top: 110px;
 }
 
 .menu-wrapper .primary-menu ul li.has-sub-menu .submenu.active {
@@ -1143,6 +1153,19 @@ header.fixed-header .logo {
   border-bottom: 0;
   padding: 5px 0;
   font-size: 15px;
+}
+
+.menu-wrapper .primary-menu ul li.has-sub-menu.active {
+  color: #c20040;
+}
+
+.menu-wrapper .primary-menu ul li.has-sub-menu.active .plus-minus .fa-minus {
+  display: inline-block;
+  color: #c20040;
+}
+
+.menu-wrapper .primary-menu ul li.has-sub-menu.active .plus-minus .fa-plus {
+  display: none;
 }
 
 .banner {

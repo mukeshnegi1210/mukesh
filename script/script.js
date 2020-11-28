@@ -6,8 +6,6 @@ $(function () {
 
     });
 
-
-
     // .main menu open===============
     $('.menu-open').click(function () {
         $('.menu-wrapper').addClass('active');
@@ -17,22 +15,22 @@ $(function () {
         $('.menu-wrapper').removeClass('active');
         $('.submenu').removeClass('active');
         $('.menu-wrapper').removeClass('submenu-open');
-
+        $('.has-sub-menu').removeClass('active');
     })
 
     // submenu open ===============
-    $('.primary-menu .has-sub-menu').click(function () {
+    $('.primary-menu .has-sub-menu .plus-minus').click(function () {
+        $('.has-sub-menu').removeClass('active');
         $('.submenu').removeClass('active');
-        $(this).find('.submenu').addClass('active');
+        $(this).parent('.has-sub-menu').addClass('active');
+        $(this).parent('.has-sub-menu').find('.submenu').addClass('active');
         $('.menu-wrapper').addClass('submenu-open');
-
     });
 
     $('.submenu-close-btn').click(function () {
         $('.menu-wrapper').removeClass('submenu-open');
-
         $('.submenu').removeClass('active');
-
+        $('.has-sub-menu').removeClass('active');
     });
 
 
@@ -64,7 +62,7 @@ $(function () {
         }, 600);
     })
 
-   
+
     function progress_test() {
         var s = $(window).scrollTop(),
             d = $(document).height(),
