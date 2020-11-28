@@ -244,6 +244,7 @@ header {
             li.has-sub-menu {
                 display: flex;
                 @include justify-content(space-between);
+                @include align-items(center);
                 cursor: pointer;
                 .plus-minus {
                     @include flex-size(25px);

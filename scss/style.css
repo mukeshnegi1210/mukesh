@@ -1123,6 +1123,11 @@ header.fixed-header .logo.header-fixed-logo {
   -webkit-box-pack: justify;
           justify-content: space-between;
   -ms-flex-pack: space-between;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
