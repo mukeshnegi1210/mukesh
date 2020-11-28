@@ -268,7 +268,7 @@ header {
                     visibility: hidden;
                     opacity: 0;
                     display: block;
-                    padding-top: 110px;
+                    padding-top: 110px !important;
                     &.active {
                         left: calc(50% + 10px);
                         z-index: 9;

@@ -1155,7 +1155,7 @@ header.fixed-header .logo.header-fixed-logo {
   visibility: hidden;
   opacity: 0;
   display: block;
-  padding-top: 110px;
+  padding-top: 110px !important;
 }
 
 .menu-wrapper .primary-menu ul li.has-sub-menu .submenu.active {
