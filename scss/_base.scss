@@ -1,0 +1,357 @@
+// Fonts inclusions =================    
+
+/* DroidSerif ============= */
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/TrajanPro-Bold.eot');
+    src: url('../fonts/TrajanPro-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/TrajanPro-Bold.svg#TrajanPro-Bold') format('svg'), url('../fonts/TrajanPro-Bold.ttf') format('truetype'), url('../fonts/TrajanPro-Bold.woff') format('woff'), url('../fonts/TrajanPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/Trajan Pro.eot');
+    src: url('../fonts/Trajan Pro.eot?#iefix') format('embedded-opentype'), url('../fonts/Trajan Pro.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('../fonts/TrajanPro-Regular.svg#TrajanPro-Regular') format('svg'), url('../fonts/TrajanPro-Regular.ttf') format('truetype'), url('../fonts/TrajanPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*=============================
+        Reset CSS
+  ===========================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote {
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+
+q {
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+
+/*=============================
+            Variables
+  ===========================*/
+
+
+/***** colors**********/
+
+$base-color:#464646;
+$primary-color:#c20040;
+$white-color:#ffffff;
+$black-color:#000000;
+
+/*=========fonts ======*/
+
+$base-font-size: 18px;
+$base-line-height: 32px;
+
+/*=============================
+                Typography
+    ===========================*/
+
+
+/****************Font families*************/
+
+$base-font-family: 'Arial, sans-serif;';
+$font-family-trajan: 'TrajanPro';
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $base-font-family;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*=============================
+            Mixins
+  ===========================*/
+
+
+/* border-radius mixin */
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+/* box-shadow mixin */
+
+@mixin box-shadow($args...) {
+    -webkit-box-shadow: $args;
+    -moz-box-shadow: $args;
+    -ms-box-shadow: $args;
+    box-shadow: $args;
+}
+
+
+/* color with opacity mixin */
+
+@mixin color-opacity($color,
+$opacity) {
+    color: rgba($color, $opacity);
+}
+
+
+/* border-color with opacity mixin */
+
+@mixin border-color-opacity($color,
+$opacity) {
+    border-color: rgba($color, $opacity);
+}
+
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* justify-content mixin */
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
+
+
+/* align-items mixin */
+
+@mixin align-items($align-horizontally) {
+    -webkit-align-items: $align-horizontally;
+    -moz-align-items: $align-horizontally;
+    -ms-align-items: $align-horizontally;
+    align-items: $align-horizontally;
+}
+
+// flex-direction
+@mixin flex-direction($direction) {
+    -webkit-box-orient: $direction;
+    -webkit-box-direction: $direction;
+    -ms-flex-direction: $direction;
+    flex-direction: $direction;
+}
+
+// flex-size
+@mixin flex-size($width) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 $width;
+    flex: 0 0 $width;
+    max-width: $width;
+}
+
+// flex wrap
+@mixin flex-wrap ($wrap) {
+    -ms-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
+
+/*text alignments*/
+
+@mixin text-align($align) {
+    text-align: $align;
+}
+
+
+/*text weight*/
+
+@mixin font-weight($weight) {
+    font-weight: $weight;
+}
+
+
+/*=============================
+            functions
+  ===========================*/
+
+// margins and paddings 
+$spaceamounts: (5,
+10,
+15,
+20,
+25,
+30,
+35,
+40,
+45,
+50,
+75,
+100); // Adjust this to include the pixel amounts you need.
+$sides: (top,
+bottom,
+left,
+right); // Leave this variable alone
+@each $space in $spaceamounts {
+    @each $side in $sides {
+        .m-#{str-slice($side, 0, 1)}-#{$space} {
+            margin-#{$side}: #{$space}px !important;
+        }
+        .p-#{str-slice($side, 0, 1)}-#{$space} {
+            padding-#{$side}: #{$space}px !important;
+        }
+    }
+}
