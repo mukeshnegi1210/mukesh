@@ -1358,6 +1358,16 @@ header.fixed-header .logo {
   left: 0;
 }
 
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+  border-color: #c20040;
+}
+
 .progress .progress-bar {
   width: 100%;
   height: 100%;
@@ -1368,26 +1378,18 @@ header.fixed-header .logo {
   top: 0;
 }
 
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
-
 .progress .progress-right {
   right: 0;
 }
 
 .progress .progress-right .progress-bar {
   left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   border-right: 0;
   -webkit-transform-origin: center right;
   transform-origin: center right;
+  border-color: #c20040;
 }
 
 .progress .progress-value {
@@ -1401,10 +1403,6 @@ header.fixed-header .logo {
   position: absolute;
   top: 5%;
   left: 5%;
-}
-
-.progress.blue .progress-bar {
-  border-color: #c20040;
 }
 
 @-webkit-keyframes loading-1 {

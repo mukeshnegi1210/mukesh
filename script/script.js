@@ -36,7 +36,7 @@ $(function () {
     });
 
 
-    // sticky header ==================
+    // sticky header & progress bar==================
 
     fixedHeader();
     progress_test();
@@ -64,12 +64,7 @@ $(function () {
         }, 600);
     })
 
-    // $('.first.circle').circleProgress({
-    //     value: 0.35,
-    //     animation: false,
-    //     fill: {gradient: ['#ff1e41', '#ff5f43']}
-    //   });
-
+   
     function progress_test() {
         var s = $(window).scrollTop(),
             d = $(document).height(),
@@ -77,9 +72,6 @@ $(function () {
         scrollPercent = (s / (d - c)) * 100;
         var position = scrollPercent;
         var pos_o = scrollPercent * 1.8
-
-
-        //  $(".circle-progress .indicator").css('width', position+'%');
         $(".progress.blue .progress-left .progress-bar").css('transform', 'rotate(' + pos_o + 'deg' + ')');
         $(".progress.blue .progress-right .progress-bar").css('transform', 'rotate(' + pos_o + 'deg' + ')');
     }
