@@ -179,7 +179,8 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Arial, sans-serif;";
+  font-family: "Arial";
+  line-height: 1.2;
 }
 
 a {
@@ -784,12 +785,13 @@ a {
 
 body {
   background: #ffffff;
-  font-family: "Arial, sans-serif;";
+  font-family: "Arial";
   font-size: 18px;
   line-height: 32px;
   color: #464646;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
 }
 
 .container {
@@ -935,7 +937,7 @@ header .header-inner .header-right .right-menu ul {
 }
 
 header .header-inner .header-right .right-menu ul li a {
-  font-family: "Arial, sans-serif;";
+  font-family: "Arial";
   display: block;
   padding: 8px 0;
   font-size: 12px;
@@ -1067,6 +1069,7 @@ header.fixed-header .logo {
 }
 
 .menu-wrapper .primary-menu ul {
+  font-family: "Arial";
   display: -webkit-box;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -1403,50 +1406,6 @@ header.fixed-header .logo {
   position: absolute;
   top: 5%;
   left: 5%;
-}
-
-@-webkit-keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-@keyframes loading-1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-}
-
-@-webkit-keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(144deg);
-    transform: rotate(144deg);
-  }
-}
-
-@keyframes loading-2 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(144deg);
-    transform: rotate(144deg);
-  }
 }
 
 @media (max-width: 767px) {
