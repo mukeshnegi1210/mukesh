@@ -39,11 +39,11 @@ $(function () {
     // sticky header ==================
 
     fixedHeader();
+    progress_test();
     $(window).scroll(function () {
-
-
         // show/hide header on scroll
         fixedHeader();
+        progress_test();
     });
     function fixedHeader() {
 
@@ -70,20 +70,21 @@ $(function () {
     //     fill: {gradient: ['#ff1e41', '#ff5f43']}
     //   });
 
-    $(window).scroll(function () {
+    function progress_test() {
         var s = $(window).scrollTop(),
             d = $(document).height(),
             c = $(window).height();
         scrollPercent = (s / (d - c)) * 100;
-        var position = scrollPercent ;
-        var pos_o=scrollPercent*1.8
-        
+        var position = scrollPercent;
+        var pos_o = scrollPercent * 1.8
+
 
         //  $(".circle-progress .indicator").css('width', position+'%');
-        $(".progress.blue .progress-left .progress-bar").css('transform', 'rotate(' + pos_o +'deg'+')');
-        $(".progress.blue .progress-right .progress-bar").css('transform', 'rotate(' + pos_o +'deg'+')');
+        $(".progress.blue .progress-left .progress-bar").css('transform', 'rotate(' + pos_o + 'deg' + ')');
+        $(".progress.blue .progress-right .progress-bar").css('transform', 'rotate(' + pos_o + 'deg' + ')');
+    }
 
-    });
+
 
     $('.banner-item-list').owlCarousel({
         items: 1,
